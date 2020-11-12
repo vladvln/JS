@@ -3,7 +3,7 @@
 // 1 Задание
 
 let a = 5, b = 6, h = 7;
-let S = 2*(a*b+b*h+a*h);
+let s = 2*(a*b+b*h+a*h);
 console.log(S);
 
 // 2 Задание
