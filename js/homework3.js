@@ -71,3 +71,29 @@ let newArr = [
      }
  }
  console.log(`Сумма элементов: ${newSum}`);
+
+//  Доп. задание 
+
+alert('Загадайте число от 1 до 100');
+let min  = 1;
+let max = 100;
+let number = Math.floor(Math.random()*max) + min;
+let result = prompt(`Это число равно ${number}?(ДА, НЕТ, ВЫХОД)`);
+while (result !== 'ВЫХОД') {
+    if (result === 'ДА') {
+        alert(`Ура. Ваше число ${number}`);
+    } else if (result === 'НЕТ') {
+        while (result === 'ДА') {
+            let check1 = prompt(`Число больше?`);
+            let check2 = prompt(`Число меньше?`);
+            if (check1 === 'ДА') {
+                min = number;
+                newNumber = Math.floor(Math.random()*max) + min;
+            } else if (check2 === 'ДА') {
+                
+            }
+        }
+    }
+
+
+}
