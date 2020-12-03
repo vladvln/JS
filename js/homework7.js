@@ -82,14 +82,12 @@ function getBooks(author, arr) {
 
 console.log(getBooks("Пушкин", books));
 
-// // Задание 4
+// Задание 4
 
-// function sortByParam(propertyName, arr) {
-//     let compareNumbers = (a, b) => a[propertyName] - b[propertyName];
-//     let compareString = (a, b) => a[propertyName].localeCompare(b[propertyName]);
-//     if (propertyName === "pageCount") return arr.sort(compareNumbers);
-//     return arr.sort(compareString);
-// }
+function sortByParam(propertyName, arr) {
+       if (propertyName === "pageCount") return arr.sort((a, b) => a[propertyName] - b[propertyName]);
+       return arr.sort((a, b) => a[propertyName].localeCompare(b[propertyName]));
+}
 
-// console.log(sortByParam("title", books));
-// console.log(sortByParam("pageCount", books));
+console.log(sortByParam("title", books));
+console.log(sortByParam("pageCount", books));
